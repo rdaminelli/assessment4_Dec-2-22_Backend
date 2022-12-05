@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneBtn">Get a Fortune!</button>
+    <button id="allFortunes">See all Fortunes!</button>
+    <section id="fortuneSec"></section>
+    <div class="pairs">
+      <h3>Add students in the field below.</h3>
+      <form id ="studentForm">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" placeholder="Type a name">
+        <button>Add a Student</button>
+      </form>
+      <br>
+      <form id="editName">
+        <label for="edit-name">If you would like, edit a name here, then press the "Update Name" button twice:</label>
+        <input type="text" id="edit-name" name="edit-name" placeholder="Type edited name">
+      </form>
+      
+      <setion id="studentsContainer"></setion>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
